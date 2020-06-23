@@ -1,0 +1,20 @@
+<div class="container py-4">
+    <h1 class="text-center my-4">Movies List</h1>
+    <div class="row">
+        <div *ngFor="let movie of movieData" class="col-md-6">
+            <div class="dive">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <img class="img-fluid" [src]=dUrl+movie.poster_path>
+                    </div>
+                    <div class="col-md-6 pt-5 pr-5">
+                        <div class="movie">
+                            <h2>{{movie.title}}</h2>
+                            <p>{{movie.overview}}</p>
+                            <div class="avg">{{movie.vote_average}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

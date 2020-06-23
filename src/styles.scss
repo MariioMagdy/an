@@ -1,0 +1,33 @@
+@import 'bootstrap';
+$bodyBg:#181824;
+$fontFamily:'segoe ui light';
+$color:white ;
+body{
+    background-color:$bodyBg ;
+    font-family: $fontFamily;
+    color:$color
+}
+
+@mixin shadow ($x,$y,$b,$c) {
+-webkit-box-shadow: $x $y $b $c;
+-moz-box-shadow: $x $y $b $c;
+box-shadow:$x $y $b $c ;
+}
+
+.dive{
+    @include shadow(0,0,10px,#09c);
+    
+    
+}
+
+.movie{
+  
+    
+}
+.avg{
+    position: absolute;
+    top:0;
+    right: 30px;
+    background-color: #09c;
+    padding: 15px;
+}
